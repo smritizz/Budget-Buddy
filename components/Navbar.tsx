@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 import Logo, { LogoMobile } from "@/components/Logo";
 import { ThemeSwitcherBtn } from "@/components/ThemeSwitcherBtn";
 import { Button, buttonVariants } from "@/components/ui/button";

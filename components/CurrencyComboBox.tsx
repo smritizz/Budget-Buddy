@@ -85,7 +85,7 @@ export function CurrencyComboBox() {
       <SkeletonWrapper isLoading={userSettings.isFetching}>
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>
-            <Button
+            <Button 
               variant="outline"
               className="w-full justify-start"
               disabled={mutation.isPending}

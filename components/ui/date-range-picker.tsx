@@ -371,11 +371,11 @@ export const DateRangePicker: FC<DateRangePickerProps> & {
           </div>
         </Button>
       </PopoverTrigger>
-      <PopoverContent align={align} className="w-auto">
+      <PopoverContent align={align} className="w-auto  max-h-[70vh] overflow-y-auto">
         <div className="flex py-2">
           <div className="flex">
             <div className="flex flex-col">
-              <div className="flex flex-col lg:flex-row gap-2 px-3 justify-end items-center lg:items-start pb-4 lg:pb-0">
+              <div className="flex flex-col lg:flex-row gap-2 px-3 justify-end items-center lg:items-start pb-0 lg:pb-0">
                 {showCompare && (
                   <div className="flex items-center space-x-2 pr-4 py-1">
                     <Switch
@@ -527,8 +527,8 @@ export const DateRangePicker: FC<DateRangePickerProps> & {
             </div>
           </div>
           {!isSmallScreen && (
-            <div className="flex flex-col items-end gap-1 pr-2 pl-6 pb-6">
-              <div className="flex w-full flex-col items-end gap-1 pr-2 pl-6 pb-6">
+            <div className="flex flex-col items-end gap-1 pr-2 pl-6 pb-2">
+              <div className="flex w-full flex-col items-end gap-1 pr-2 pl-6 pb-0 h-full">
                 {PRESETS.map((preset) => (
                   <PresetButton
                     key={preset.name}
@@ -541,7 +541,7 @@ export const DateRangePicker: FC<DateRangePickerProps> & {
             </div>
           )}
         </div>
-        <div className="flex justify-end gap-2 py-2 pr-4">
+        <div className="flex justify-end gap-1 pr-4">
           <Button
             onClick={() => {
               setIsOpen(false);
